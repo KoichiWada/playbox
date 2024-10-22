@@ -24,7 +24,9 @@ jobs:
         go-version: '1.23'
 
     - name: Build
+      working-directory: go/helloworld
       run: go build -v ./...
 
     - name: Test
+      working-directory: go/helloworld
       run: go test -v ./...
