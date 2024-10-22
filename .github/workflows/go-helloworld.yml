@@ -6,10 +6,10 @@ name: Go-HelloWorld
 on:
   push:
     branches: [ "main" ]
-    paths: [ "go/helloworld/**" ]
+    paths: [ ".github/workflows/go-helloworld.yml", "go/helloworld/**" ]
   pull_request:
     branches: [ "main" ]
-    paths: [ "go/helloworld/**" ]
+    paths: [ ".github/workflows/go-helloworld.yml", "go/helloworld/**" ]
 
 jobs:
 
